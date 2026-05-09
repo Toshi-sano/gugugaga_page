@@ -4,15 +4,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 body {
     margin: 0;
-    padding: 10px;
+}
 
+.gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+}
 
-    background: #111;
+img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* タブレット */
+@media screen and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 a {
@@ -36,8 +49,10 @@ img {
 </style>
 </head>
 
+
 <body>
 
+<div class="gallery">
 
 <a href="https://youtube.com/shorts/LKLfuMM7J3Q" target="_blank">
   <img src="https://i.ytimg.com/vi/LKLfuMM7J3Q/hqdefault.jpg">
@@ -338,6 +353,8 @@ img {
 <a href="https://www.youtube.com/shorts/BL1ILTXgTbk" target="_blank">
 <img src="https://i.ytimg.com/vi/BL1ILTXgTbk/hqdefault.jpg">
 </a>
+
+</div>
 
 
 </body>
