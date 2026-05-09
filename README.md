@@ -1,2 +1,2 @@
 # gugugaga_page
-YouTubeのググガガ動画のお気に入りをまとめたページ
+YouTubeでお気に入りのググガガ動画をまとめたページ
